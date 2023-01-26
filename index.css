@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204deg, 43%, 93%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 3rem 2rem;
+  background-color: white;
+  font-family: "Karla", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+@media screen and (min-width: 400px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    max-width: 700px;
+  }
+}
+
+.description {
+  margin: 2rem 1.5rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+.description h2 {
+  color: #2fc6c4;
+  font-size: 1.5rem;
+}
+.description .description_intro {
+  color: hsl(71deg, 73%, 54%);
+  padding: 1.5rem 0;
+  font-weight: 700;
+}
+.description .description_text {
+  color: hsl(218deg, 22%, 67%);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 400px) {
+  .description {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 2.5em;
+  }
+  .description h2 {
+    font-size: 2em;
+  }
+  .description .description_intro {
+    padding: 1.5em 0 0.8em 0;
+    font-size: 1.5em;
+  }
+  .description .description_text {
+    font-size: 1.15em;
+  }
+}
+
+.subscription {
+  background-color: hsl(179deg, 62%, 43%);
+  color: white;
+  padding: 1.5rem;
+  grid-column: 1;
+  grid-row: 2;
+}
+.subscription h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.subscription .sub_price {
+  margin: 0.5rem 0;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.subscription .sub_price span {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  color: white;
+}
+.subscription .sub_detail {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+.subscription button {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: hsl(71deg, 73%, 54%);
+  border-radius: 5px;
+  border: 0px;
+  padding: 1rem 4rem;
+  box-shadow: 0px 0px 10px 1px hsla(0deg, 0%, 0%, 0.2);
+}
+.subscription button:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 400px) {
+  .subscription {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 2.5rem;
+  }
+}
+
+.outro {
+  color: white;
+  padding: 1.5rem;
+  background-color: #2fc6c4;
+  grid-column: 1;
+  grid-row: 3;
+}
+.outro h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.outro ul > li {
+  list-style: none;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+.outro li > a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (min-width: 400px) {
+  .outro {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 2.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
